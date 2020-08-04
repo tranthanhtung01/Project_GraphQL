@@ -1,0 +1,10 @@
+{
+	"verification": "Verification",
+	"resetPassword": "Reset password",
+	"followUrl": "Follow URL",
+	"yourAccountHasBeenSuccessfullyVerified": "Your account has been successfully verified",
+	"greetingQuery": "Greeting query from {{service}} service",
+	"greetingMutation": "Greeting mutation from {{service}} service",
+	"emailTaken": "Email has already been taken.",
+	"wrongCredential": "Invalid email or password"
+}

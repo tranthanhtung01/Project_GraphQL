@@ -1,0 +1,59 @@
+{
+  "name": "express-graphql-microservices-boilerplate",
+  "version": "1.0.0",
+  "author": {
+    "name": "Phuc Anthony",
+    "email": "phuc9h2010@gmail.com"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@hapi/joi": "^17.1.1",
+    "apollo-link-context": "^1.0.19",
+    "apollo-link-error": "^1.1.12",
+    "apollo-link-http": "^1.5.16",
+    "apollo-server-express": "^2.11.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "chokidar": "^3.3.1",
+    "commander": "^5.0.0",
+    "cors": "^2.8.5",
+    "crypto-random-string": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "event-store-client": "^1.1.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "fs-extra": "^9.0.0",
+    "fs-transaction": "^1.0.10",
+    "graphql": "^14.5.8",
+    "graphql-add-middleware": "^0.3.7",
+    "graphql-resolver-middleware": "^0.0.1",
+    "graphql-resolvers": "^0.4.2",
+    "graphql-tools": "^4.0.7",
+    "i18next": "^19.3.3",
+    "i18next-express-middleware": "^1.9.1",
+    "invalidate-module": "^1.0.0",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.3",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0",
+    "randomatic": "^3.1.1",
+    "replace-in-file": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/node": "^7.8.7",
+    "nodemon": "^2.0.2"
+  }
+}
