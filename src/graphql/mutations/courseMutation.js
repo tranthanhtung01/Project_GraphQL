@@ -17,9 +17,9 @@ export const createCourse = {
         try {
             const {user: author} = req,
                 { error } =  courseSchema.validate({
-                    title: title,
-                    description: description,
-                    price: price
+                     title,
+                    description,
+                     price
                 });
             if(error) return Promise.reject(new Error(error.message));
             const newCourse = new CourseModel({

@@ -1,6 +1,5 @@
 import { GraphQLObjectType } from 'graphql';
 import { Resolvers } from '../../utils';
-import {CourseType} from "./course";
 
 const timeoutPromise = (wait) => {
 	return new Promise((resolve) => {

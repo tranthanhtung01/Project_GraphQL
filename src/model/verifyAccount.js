@@ -1,7 +1,7 @@
 import mongoose, {Schema} from 'mongoose';
 
 const verifyEmailSchema = new Schema({
-    digitCode: Number,
+    digitCode: String,
     email: String,
 })
 verifyEmailSchema.statics.emailExist = function (email){

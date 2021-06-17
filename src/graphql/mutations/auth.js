@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { mutationOf, Primitives } from '../../utils';
-import { AccessTokenType } from '../types';
+import {AccessTokenType, MessageTpe} from '../types';
 import UserModel from '../../model/user';
 import randomize from 'randomatic';
 import VerifyEmailModel from "../../model/verifyAccount";
@@ -84,7 +84,7 @@ export const signUp = {
 	}
 };
 export const verifyEmail = {
-	type: mutationOf(AccessTokenType, 'verifyEmail', 'verify a email'),
+	type: MessageTpe,
 	args: {
 		digitCode: Primitives.requiredInt(),
 	},

@@ -39,7 +39,7 @@ export const courseInput = new GraphQLInputObjectType({
 const courseList = async ({courses}) => {
     return courses;
 }
-const authorResolve = async (course, args, {req}) => {
+const authorResolve = async (course) => {
         try {
             //console.log(req.user)
             const { author } = course,

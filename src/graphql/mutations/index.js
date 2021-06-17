@@ -4,7 +4,7 @@ import { GraphQLString as String } from 'graphql/type/scalars';
 import { signUp, signIn, verifyEmail } from './auth';
 import {middlewareResolver} from "../../utils";
 import {createCourse, updateCourse, removeCourse} from "./courseMutation";
-import {isAuthenticated, isAuthorized} from "../middleware";
+import {isAuthenticated, isAuthorized,isUserActivated} from "../middleware";
 
 export default new GraphQLObjectType({
 	name: 'Mutations',
@@ -12,10 +12,10 @@ export default new GraphQLObjectType({
 		greeting,
 		signUp,
 		signIn,
-		createCourse: middlewareResolver(createCourse, [isAuthenticated]),
+		createCourse: middlewareResolver(createCourse, [isAuthenticated, isUserActivated]),
 		verifyEmail: middlewareResolver(verifyEmail, [isAuthenticated]),
 		updateCourse: middlewareResolver(updateCourse, [isAuthenticated, isAuthorized]),
-		DeleteCourse: middlewareResolver(removeCourse, [isAuthenticated, isAuthorized]),
+		deleteCourse: middlewareResolver(removeCourse, [isAuthenticated, isAuthorized]),
 	}),
 });
 

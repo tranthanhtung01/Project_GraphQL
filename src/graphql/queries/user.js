@@ -23,7 +23,7 @@ export const listUser = {
 		limit: Primitives.int(4),
 		page: Primitives.int(1),
 	},
-	resolve: async (rootValue, {limit, page}, {req}) => {
+	resolve: async (rootValue, {limit, page}) => {
 		if (page < 1) return Promise.reject(new Error('Page invalid'));
 		const foundUsers = await UserModel.find().sort({createdAt: 1}).limit(limit).skip((page - 1) * limit);
 		if (foundUsers.length < 1) return Promise.reject(new Error('No course remain'));

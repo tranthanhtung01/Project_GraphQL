@@ -6,7 +6,7 @@ const userSchema = new Schema({
 	lastName: String,
 	email: String,
 	password: String,
-	isActivated: Boolean,
+	isActivated: Boolean
 }, { timestamps: true });
 
 userSchema.statics.emailExist = function (email) {
